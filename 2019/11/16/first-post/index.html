@@ -46,14 +46,17 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Passion">
-<meta property="og:url" content="http:&#x2F;&#x2F;xiewenquan.github.io&#x2F;archives&#x2F;2019&#x2F;11&#x2F;index.html">
+  <meta name="description" content="###new、delete、malloc、free关系delete会调用对象的析构函数,和new对应，free只会释放内存，new调用构造函数。malloc与free是C++&#x2F;C语言的标准库函数，new&#x2F;delete是C++的运算符。它们都可用于申请动态内存和释放内存。对于非内部数据类型的对象而言，光用malloc&#x2F;free无法满足动态对象的要求。对象在创建的同时要自动执行构造函数，对象在消亡之前">
+<meta property="og:type" content="article">
+<meta property="og:title" content="first-post">
+<meta property="og:url" content="http:&#x2F;&#x2F;xiewenquan.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;first-post&#x2F;index.html">
 <meta property="og:site_name" content="Passion">
+<meta property="og:description" content="###new、delete、malloc、free关系delete会调用对象的析构函数,和new对应，free只会释放内存，new调用构造函数。malloc与free是C++&#x2F;C语言的标准库函数，new&#x2F;delete是C++的运算符。它们都可用于申请动态内存和释放内存。对于非内部数据类型的对象而言，光用malloc&#x2F;free无法满足动态对象的要求。对象在创建的同时要自动执行构造函数，对象在消亡之前">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-16T10:17:33.321Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://xiewenquan.github.io/archives/2019/11/">
+<link rel="canonical" href="http://xiewenquan.github.io/2019/11/16/first-post/">
 
 
 <script id="page-configurations">
@@ -61,13 +64,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>归档 | Passion</title>
+  <title>first-post | Passion</title>
   
 
 
@@ -196,69 +199,80 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://xiewenquan.github.io/2019/11/16/first-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Passion">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          first-post
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-16 18:16:20 / 修改时间：18:17:33" itemprop="dateCreated datePublished" datetime="2019-11-16T18:16:20+08:00">2019-11-16</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+        <p>###new、delete、malloc、free关系<br>delete会调用对象的析构函数,和new对应，free只会释放内存，new调用构造函数。malloc与free是C++/C语言的标准库函数，new/delete是C++的运算符。它们都可用于申请动态内存和释放内存。对于非内部数据类型的对象而言，光用malloc/free无法满足动态对象的要求。对象在创建的同时要自动执行构造函数，对象在消亡之前要自动执行析构函数。由于malloc/free是库函数而不是运算符，不在编译器控制权限之内，不能够把执行构造函数和析构函数的任务强加于malloc/free。因此C++语言需要一个能完成动态内存分配和初始化工作的运算符new，以及一个能完成清理与释放内存工作的运算符delete。注意new/delete不是库函数。</p>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-16T18:16:20+08:00"
-              content="2019-11-16">
-          11-16
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/16/first-post/" itemprop="url">
-            <span itemprop="name">first-post</span>
-          </a>
-      </h2>
+        
 
-    </header>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/16/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
   </article>
+  
+  
+  
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-16T17:41:20+08:00"
-              content="2019-11-16">
-          11-16
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/16/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
